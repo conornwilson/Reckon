@@ -14,6 +14,17 @@
 		70CF053123A73EDD0052A0DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70CF053023A73EDD0052A0DE /* Preview Assets.xcassets */; };
 		70CF053423A73EDD0052A0DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70CF053223A73EDD0052A0DE /* LaunchScreen.storyboard */; };
 		70CF053F23A73EDD0052A0DE /* ReckonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF053E23A73EDD0052A0DE /* ReckonTests.swift */; };
+		70CF054D23A73FB40052A0DE /* SettingsSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF054C23A73FB40052A0DE /* SettingsSheetView.swift */; };
+		70CF054F23A741070052A0DE /* SettingsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF054E23A741070052A0DE /* SettingsListView.swift */; };
+		70CF055123A741140052A0DE /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF055023A741140052A0DE /* SettingsRowView.swift */; };
+		70CF055323A7554A0052A0DE /* CardsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF055223A7554A0052A0DE /* CardsListView.swift */; };
+		70CF055523A757DB0052A0DE /* CardListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF055423A757DB0052A0DE /* CardListCellView.swift */; };
+		70CF055923A75CE90052A0DE /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF055823A75CE90052A0DE /* Sequence.swift */; };
+		70CF055B23A75F7A0052A0DE /* FibonacciSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF055A23A75F7A0052A0DE /* FibonacciSequence.swift */; };
+		70CF055D23A764B80052A0DE /* StandardSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF055C23A764B80052A0DE /* StandardSequence.swift */; };
+		70CF055F23A7652D0052A0DE /* TShirtSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF055E23A7652D0052A0DE /* TShirtSequence.swift */; };
+		70CF056123A76B520052A0DE /* SequenceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF056023A76B520052A0DE /* SequenceHelper.swift */; };
+		70CF056323A8A1640052A0DE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF056223A8A1640052A0DE /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +49,17 @@
 		70CF053A23A73EDD0052A0DE /* ReckonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReckonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70CF053E23A73EDD0052A0DE /* ReckonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReckonTests.swift; sourceTree = "<group>"; };
 		70CF054023A73EDD0052A0DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70CF054C23A73FB40052A0DE /* SettingsSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSheetView.swift; sourceTree = "<group>"; };
+		70CF054E23A741070052A0DE /* SettingsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsListView.swift; sourceTree = "<group>"; };
+		70CF055023A741140052A0DE /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
+		70CF055223A7554A0052A0DE /* CardsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsListView.swift; sourceTree = "<group>"; };
+		70CF055423A757DB0052A0DE /* CardListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListCellView.swift; sourceTree = "<group>"; };
+		70CF055823A75CE90052A0DE /* Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
+		70CF055A23A75F7A0052A0DE /* FibonacciSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciSequence.swift; sourceTree = "<group>"; };
+		70CF055C23A764B80052A0DE /* StandardSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardSequence.swift; sourceTree = "<group>"; };
+		70CF055E23A7652D0052A0DE /* TShirtSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TShirtSequence.swift; sourceTree = "<group>"; };
+		70CF056023A76B520052A0DE /* SequenceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceHelper.swift; sourceTree = "<group>"; };
+		70CF056223A8A1640052A0DE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +101,10 @@
 		70CF052623A73EDB0052A0DE /* Reckon */ = {
 			isa = PBXGroup;
 			children = (
+				70CF055623A75C640052A0DE /* Models */,
+				70CF054923A73EEC0052A0DE /* Views */,
 				70CF052723A73EDB0052A0DE /* AppDelegate.swift */,
 				70CF052923A73EDB0052A0DE /* SceneDelegate.swift */,
-				70CF052B23A73EDB0052A0DE /* ContentView.swift */,
 				70CF052D23A73EDD0052A0DE /* Assets.xcassets */,
 				70CF053223A73EDD0052A0DE /* LaunchScreen.storyboard */,
 				70CF053523A73EDD0052A0DE /* Info.plist */,
@@ -105,6 +128,72 @@
 				70CF054023A73EDD0052A0DE /* Info.plist */,
 			);
 			path = ReckonTests;
+			sourceTree = "<group>";
+		};
+		70CF054923A73EEC0052A0DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				70CF054B23A73F390052A0DE /* Cards */,
+				70CF054A23A73F330052A0DE /* Settings */,
+				70CF052B23A73EDB0052A0DE /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		70CF054A23A73F330052A0DE /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				70CF054C23A73FB40052A0DE /* SettingsSheetView.swift */,
+				70CF054E23A741070052A0DE /* SettingsListView.swift */,
+				70CF055023A741140052A0DE /* SettingsRowView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		70CF054B23A73F390052A0DE /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				70CF055223A7554A0052A0DE /* CardsListView.swift */,
+				70CF055423A757DB0052A0DE /* CardListCellView.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		70CF055623A75C640052A0DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				70CF056623A8B3D70052A0DE /* Settings */,
+				70CF056523A8B36C0052A0DE /* Themes */,
+				70CF056423A8B3480052A0DE /* Sequences */,
+				70CF056223A8A1640052A0DE /* Constants.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		70CF056423A8B3480052A0DE /* Sequences */ = {
+			isa = PBXGroup;
+			children = (
+				70CF055823A75CE90052A0DE /* Sequence.swift */,
+				70CF055A23A75F7A0052A0DE /* FibonacciSequence.swift */,
+				70CF055C23A764B80052A0DE /* StandardSequence.swift */,
+				70CF055E23A7652D0052A0DE /* TShirtSequence.swift */,
+				70CF056023A76B520052A0DE /* SequenceHelper.swift */,
+			);
+			path = Sequences;
+			sourceTree = "<group>";
+		};
+		70CF056523A8B36C0052A0DE /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+		70CF056623A8B3D70052A0DE /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,8 +298,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				70CF052823A73EDB0052A0DE /* AppDelegate.swift in Sources */,
+				70CF054F23A741070052A0DE /* SettingsListView.swift in Sources */,
+				70CF055F23A7652D0052A0DE /* TShirtSequence.swift in Sources */,
+				70CF055923A75CE90052A0DE /* Sequence.swift in Sources */,
+				70CF055523A757DB0052A0DE /* CardListCellView.swift in Sources */,
+				70CF055123A741140052A0DE /* SettingsRowView.swift in Sources */,
+				70CF056123A76B520052A0DE /* SequenceHelper.swift in Sources */,
+				70CF055D23A764B80052A0DE /* StandardSequence.swift in Sources */,
+				70CF055B23A75F7A0052A0DE /* FibonacciSequence.swift in Sources */,
 				70CF052A23A73EDB0052A0DE /* SceneDelegate.swift in Sources */,
 				70CF052C23A73EDB0052A0DE /* ContentView.swift in Sources */,
+				70CF056323A8A1640052A0DE /* Constants.swift in Sources */,
+				70CF055323A7554A0052A0DE /* CardsListView.swift in Sources */,
+				70CF054D23A73FB40052A0DE /* SettingsSheetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
