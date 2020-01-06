@@ -3,4 +3,70 @@
    uuid = "B941C422-D6A7-4C20-BC19-5C061F57461A"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EAD7770A-B52E-463C-9C31-4CE5679A2FB8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Reckon/Views/Settings/SettingsRowView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F5BA62C6-89AA-4058-90D3-FBE228E0CD1C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Reckon/Views/Settings/SettingsRowView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "F5BA62C6-89AA-4058-90D3-FBE228E0CD1C - 452cac90a118e906"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Reckon.SettingsRowView.body.getter : some"
+                  moduleName = "Reckon"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/conorwilson/Dev/iOS/Reckon/Reckon/Views/Settings/SettingsRowView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "58">
+               </Location>
+               <Location
+                  uuid = "F5BA62C6-89AA-4058-90D3-FBE228E0CD1C - acff24ed4bdd50a8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.Picker&lt;SwiftUI.Text, Swift.String, SwiftUI.ForEach&lt;Swift.Range&lt;Swift.Int&gt;, Swift.Int, SwiftUI.Text&gt;&gt; in Reckon.SettingsRowView.body.getter : some"
+                  moduleName = "Reckon"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/conorwilson/Dev/iOS/Reckon/Reckon/Views/Settings/SettingsRowView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "45">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

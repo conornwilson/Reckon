@@ -9,14 +9,14 @@
 import Foundation
 
 struct SequenceHelper {
+
+    public static let sequences: [Sequence] = [
+        StandardSequence(),
+        FibonacciSequence(),
+        TShirtSequence()
+    ]
+
     public static func sequenceForName(_ name: String) -> Sequence {
-        switch name {
-        case FibonacciSequence().name:
-            return FibonacciSequence()
-        case TShirtSequence().name:
-            return TShirtSequence()
-        default:
-            return StandardSequence()
-        }
+        return sequences.first(where: { name == $0.name }) ?? sequences.first!
     }
 }

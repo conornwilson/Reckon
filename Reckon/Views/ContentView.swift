@@ -10,21 +10,23 @@ import SwiftUI
 
 struct ContentView: View {
 
-    private let sequenceName: String = UserDefaults.standard.string(forKey: "sequenceName") ?? StandardSequence().name
-
     @State private var bottomSheetShown = false
+    @State private var theme: Theme = ThemeHelper.themeForName(
+        UserDefaults.standard.string(forKey: "themeName") ?? PurpleTheme().name
+    )
     @State private var sequence: Sequence = SequenceHelper.sequenceForName(
         UserDefaults.standard.string(forKey: "sequenceName") ?? StandardSequence().name
     )
 
     var body: some View {
         GeometryReader { geometry in
-            CardsListView(sequence: self.$sequence)
+            CardsListView(theme: self.$theme, sequence: self.$sequence)
                 .padding()
             SettingsSheetView(
                 isOpen: self.$bottomSheetShown,
                 maxHeight: geometry.size.height * 0.65,
-                sequence: self.$sequence
+                sequence: self.$sequence,
+                theme: self.$theme
             )
                 .edgesIgnoringSafeArea(.all)
         }

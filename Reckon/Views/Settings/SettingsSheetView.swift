@@ -12,6 +12,7 @@ struct SettingsSheetView: View {
 
     @Binding var isOpen: Bool
     @Binding var sequence: Sequence
+    @Binding var theme: Theme
     @GestureState private var translation: CGFloat = 0
 
     let maxHeight: CGFloat
@@ -43,10 +44,16 @@ struct SettingsSheetView: View {
         GeometryReader { geometry in
             VStack(spacing: 0) {
                 self.indicator.padding()
-                SettingsListView(title: self.title)
+                VStack(alignment: .leading, spacing: 20) {
+                    Text(self.title)
+                        .font(.title)
+                        .bold()
+                        .padding([.horizontal])
+                    SettingsListView(selectedSequence: self.$sequence, selectedTheme: self.$theme, isVisible: self.isOpen)
+                }
             }
             .frame(width: geometry.size.width, height: self.maxHeight, alignment: .top)
-            .background(Color(UIColor.secondarySystemBackground))
+            .background(Color(UIColor.secondarySystemBackground).blur(radius: 3))
             .cornerRadius(10)
             .frame(height: geometry.size.height, alignment: .bottom)
             .offset(y: max(self.offset + self.translation, 0))
@@ -63,19 +70,24 @@ struct SettingsSheetView: View {
                 }
             )
         }
+        .opacity(0.97)
     }
 
-    init(isOpen: Binding<Bool>, maxHeight: CGFloat, sequence: Binding<Sequence>) {
+    init(isOpen: Binding<Bool>, maxHeight: CGFloat, sequence: Binding<Sequence>, theme: Binding<Theme>) {
         self.minHeight = Constants.settingsSheetMinHeight
         self.maxHeight = maxHeight
         self._isOpen = isOpen
         self._sequence = sequence
+        self._theme = theme
     }
 }
 
 struct SettingsSheetView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsSheetView(isOpen: .constant(false), maxHeight: 500, sequence: .constant(StandardSequence()))
+        SettingsSheetView(isOpen: .constant(false),
+                          maxHeight: 500,
+                          sequence: .constant(StandardSequence()),
+                          theme: .constant(PastelTheme()))
             .edgesIgnoringSafeArea(.all)
     }
 }

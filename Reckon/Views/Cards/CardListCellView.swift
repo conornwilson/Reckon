@@ -9,19 +9,28 @@
 import SwiftUI
 
 struct CardListCellView: View {
-    let value: String
+    @Binding var theme: Theme
+    @Binding var sequence: Sequence
+    let currentIndex: Int
+    var onTapAction: ((Int) -> Void)?
 
     var body: some View {
         GeometryReader { geometry in
             ZStack {
                 Rectangle()
-                    .fill(Color.red)
-                    .frame(width: geometry.size.width, height: Constants.cardHeight)
+                    .fill(self.theme.colorAtIndex(self.currentIndex))
+                    .frame(width: geometry.size.width, height: Constants.cardCellHeight)
                 .cornerRadius(10, antialiased: true)
-                Text(self.value)
+                .gesture(TapGesture()
+                    .onEnded { _ in
+                        self.onTapAction?(self.currentIndex)
+                    }
+                )
+                Text(self.sequence.values[self.currentIndex])
                     .font(.largeTitle)
                     .bold()
                     .foregroundColor(Color.white)
+                    .shadow(radius: 1)
             }
         }
     }
@@ -29,6 +38,6 @@ struct CardListCellView: View {
 
 struct CardListCellView_Previews: PreviewProvider {
     static var previews: some View {
-        CardListCellView(value: "1")
+        CardListCellView(theme: .constant(PastelTheme()), sequence: .constant(StandardSequence()), currentIndex: 0)
     }
 }

@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct Constants {
-    static let cardHeight: CGFloat = 100
+    static let cardCellHeight: CGFloat = 100
+    static let cardHeightRatio: CGFloat = 0.65
+    static let cardWidthRatio: CGFloat = 0.8
     static let settingsSheetMinHeight: CGFloat = 100
+    static let previewSize: CGFloat = 75
 }
