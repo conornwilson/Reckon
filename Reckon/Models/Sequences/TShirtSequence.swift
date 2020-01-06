@@ -22,3 +22,13 @@ struct TShirtSequence: Sequence {
         "?"
     ]
 }
+
+extension TShirtSequence: PreviewPickerOptionContentProvider {
+    var key: String {
+        return name
+    }
+
+    var preview: Preview {
+        return Preview(sequence: self)
+    }
+}

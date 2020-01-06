@@ -11,11 +11,12 @@ import SwiftUI
 struct PreviewPicker: View {
     @Binding var selection: String
     let title: String
-    let content: [PreviewPickerOption]
+    let providers: [PreviewPickerOptionContentProvider]
 
-    public init(selection: Binding<String>, title: String) {
+    public init(selection: Binding<String>, title: String, providers: [PreviewPickerOptionContentProvider]) {
         self._selection = selection
         self.title = title
+        self.providers = providers
     }
 
     public var body: some View {
@@ -26,13 +27,10 @@ struct PreviewPicker: View {
                 .padding([.horizontal])
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
-                    PreviewPickerOption<PurpleTheme>(selected: self.$selection, content: PurpleTheme())
-                    PreviewPickerOption<PurpleTheme>(selected: self.$selection, content: PurpleTheme())
-                    PreviewPickerOption<PurpleTheme>(selected: self.$selection, content: PurpleTheme())
-                    PreviewPickerOption<PurpleTheme>(selected: self.$selection, content: PurpleTheme())
-                    PreviewPickerOption<PurpleTheme>(selected: self.$selection, content: PurpleTheme())
-                    PreviewPickerOption<PurpleTheme>(selected: self.$selection, content: PurpleTheme())
-                    PreviewPickerOption<PurpleTheme>(selected: self.$selection, content: PurpleTheme())
+                    ForEach(providers.indices) { index in
+                        PreviewPickerOption(selected: self.$selection,
+                                            content: PreviewPickerOptionContent(key: self.providers[index].key, preview: self.providers[index].preview))
+                    }
                 }
                 .padding([.horizontal])
             }
@@ -42,6 +40,10 @@ struct PreviewPicker: View {
 
 struct ThumbPicker_Previews: PreviewProvider {
     static var previews: some View {
-        PreviewPicker(selection: .constant(PurpleTheme().name), title: "Select Theme")
+        PreviewPicker(selection: .constant(PurpleTheme().name), title: "Select Theme", providers: [
+            PurpleTheme(),
+            PastelTheme(),
+            RedTheme()
+        ])
     }
 }

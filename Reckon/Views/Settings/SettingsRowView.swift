@@ -9,24 +9,26 @@
 import SwiftUI
 
 struct SettingsRowView: View {
-    let options: [String]
+    let options: [PreviewPickerOptionContentProvider]
     @Binding var selected: String
     let name: String
 
     var body: some View {
         Section {
-            Picker(selection: $selected, label: Text(name)) {
-                ForEach(options, id: \.self) { option in
-                    Text(option)
-                }
-            }
-            .pickerStyle(WheelPickerStyle())
+            PreviewPicker(selection: $selected, title: name, providers: options)
         }
     }
 }
 
 struct SettingsRowView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsRowView(options: ThemeHelper.themes.map({ $0.name }), selected: .constant(ThemeHelper.themes[0].name), name: "Select Theme")
+        SettingsRowView(
+            options: [
+                PurpleTheme(),
+                PastelTheme(),
+                RedTheme()
+            ],
+            selected: .constant(ThemeHelper.themes[0].name),
+            name: "Select Theme")
     }
 }

@@ -32,26 +32,11 @@ struct SettingsListView: View {
         })
 
         return Form {
-            SettingsRowView(options: ThemeHelper.themes.map({ $0.name }), selected: themeBinding, name: "Select Theme")
-            SettingsRowView(options: SequenceHelper.sequences.map({ $0.name }), selected: sequenceBinding, name: "Select Sequence")
+            SettingsRowView(options: ThemeHelper.themes.compactMap({ $0 as? PreviewPickerOptionContentProvider }), selected: themeBinding, name: "Select Theme")
+            SettingsRowView(options: SequenceHelper.sequences.compactMap({ $0 as? PreviewPickerOptionContentProvider }), selected: sequenceBinding, name: "Select Sequence")
+            
         }
         .colorMultiply(Color(UIColor.secondarySystemBackground))
-
-
-//        return NavigationView {
-//            //(alignment: .leading)
-////            VStack {
-//                Form {
-//                    SettingsRowView(options: ThemeHelper.themes.map({ $0.name }), selected: themeBinding, name: "Select Theme")
-//                    SettingsRowView(options: ThemeHelper.themes.map({ $0.name }), selected: themeBinding, name: "Select Theme")
-//                }
-//                .colorMultiply(Color(UIColor.secondarySystemBackground))
-//
-////            }
-//        }
-//        .navigationViewStyle(StackNavigationViewStyle())
-//        .navigationBarTitle("Settings")
-//        .navigationBarHidden(true)
         .opacity(isVisible ? 1 : 0)
         .onAppear {
             self.selectedThemeName = self.selectedTheme.name

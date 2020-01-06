@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 enum PreviewType {
     case theme(Theme)
@@ -20,6 +21,7 @@ enum PreviewType {
                     Rectangle()
                         .fill(theme.colorAtIndex(0))
                         .frame(width: Constants.previewSize, height: Constants.previewSize)
+                        .cornerRadius(10, antialiased: true)
                     Text(theme.name)
                         .font(.subheadline)
                 }
@@ -27,9 +29,16 @@ enum PreviewType {
         case let .sequence(sequence):
             return AnyView(
                 VStack {
-                    Rectangle()
-                        .fill(Color.gray)
-                        .frame(width: Constants.previewSize, height: Constants.previewSize)
+                    ZStack {
+                        Rectangle()
+                            .fill(Color(UIColor.lightGray))
+                            .frame(width: Constants.previewSize, height: Constants.previewSize)
+                            .cornerRadius(10, antialiased: true)
+                        Text(sequence.values.joined(separator:", "))
+                            .font(.headline)
+                            .colorInvert()
+                            .frame(width: Constants.previewSize * 0.90, height: Constants.previewSize * 0.90)
+                    }
                     Text(sequence.name)
                 }
             )
@@ -55,6 +64,7 @@ struct Preview: View {
 
 struct Preview_Previews: PreviewProvider {
     static var previews: some View {
-        Preview(theme: PurpleTheme())
+//        Preview(theme: PurpleTheme())
+        Preview(sequence: StandardSequence())
     }
 }

@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct PreviewPickerOption<Content>: View where Content: PreviewPickerOptionContent {
+struct PreviewPickerOption: View {
     @Binding var selected: String
     let content: PreviewPickerOptionContent
 
@@ -19,13 +19,14 @@ struct PreviewPickerOption<Content>: View where Content: PreviewPickerOptionCont
 
     var body: some View {
         ZStack {
-            content.preview()
+            content.preview
             if selected == content.key {
                 Image(systemName: "checkmark.circle.fill")
                     .renderingMode(.original)
                     .font(Font.title.weight(.semibold))
                     .colorInvert()
                     .offset(x: 0, y: -10)
+                    .shadow(radius: 5)
             }
         }.onTapGesture {
             self.selected = self.content.key
@@ -35,11 +36,23 @@ struct PreviewPickerOption<Content>: View where Content: PreviewPickerOptionCont
 
 struct PreviewPickerOption_Previews: PreviewProvider {
     static var previews: some View {
-        PreviewPickerOption<PurpleTheme>(selected: .constant(PurpleTheme().name), content: PurpleTheme())
+        let theme = PurpleTheme()
+        return PreviewPickerOption(selected: .constant(theme.name),
+                                   content: PreviewPickerOptionContent(key: theme.name, preview: theme.preview))
     }
 }
 
-protocol PreviewPickerOptionContent {
+class PreviewPickerOptionContent {
+    let key: String
+    let preview: Preview
+
+    init(key: String, preview: Preview) {
+        self.key = key
+        self.preview = preview
+    }
+}
+
+protocol PreviewPickerOptionContentProvider {
     var key: String { get }
-    func preview() -> Preview
+    var preview: Preview { get }
 }

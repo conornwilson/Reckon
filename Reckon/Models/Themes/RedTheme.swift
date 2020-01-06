@@ -16,14 +16,15 @@ struct RedTheme: Theme, ColorTheme {
     func colorAtIndex(_ index: Int) -> Color {
         return color(for: index)
     }
-
-    func preview() -> some View {
-        VStack {
-            Rectangle()
-                .fill(self.baseColor)
-                .frame(width: 50, height: 50)
-            Text(self.name)
-        }
-    }
     
+}
+
+extension RedTheme: PreviewPickerOptionContentProvider {
+    var key: String {
+        return name
+    }
+
+    var preview: Preview {
+        return Preview(theme: self)
+    }
 }

@@ -16,17 +16,14 @@ struct PurpleTheme: Theme, ColorTheme {
     func colorAtIndex(_ index: Int) -> Color {
         return color(for: index)
     }
-
 }
 
-extension PurpleTheme: PreviewPickerOptionContent {
-
+extension PurpleTheme: PreviewPickerOptionContentProvider {
     var key: String {
         return name
     }
 
-    func preview() -> Preview {
-        Preview(theme: self)
+    var preview: Preview {
+        return Preview(theme: self)
     }
-
 }

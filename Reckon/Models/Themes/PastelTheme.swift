@@ -40,13 +40,14 @@ struct PastelTheme: Theme {
         return colors[index]
     }
 
-    func preview() -> some View {
-        VStack {
-            Rectangle()
-                .fill(self.colors[0])
-                .frame(width: 50, height: 50)
-            Text(self.name)
-        }
+}
+
+extension PastelTheme: PreviewPickerOptionContentProvider {
+    var key: String {
+        return name
     }
 
+    var preview: Preview {
+        return Preview(theme: self)
+    }
 }
