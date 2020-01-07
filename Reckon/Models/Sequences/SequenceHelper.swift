@@ -17,6 +17,6 @@ struct SequenceHelper {
     ]
 
     public static func sequenceForName(_ name: String) -> Sequence {
-        return sequences.first(where: { name == $0.name }) ?? sequences.first!
+        return sequences.first(where: { name == $0.name }) ?? sequences[0]
     }
 }

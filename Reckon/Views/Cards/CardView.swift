@@ -35,7 +35,7 @@ struct CardView: View {
                                     Rectangle()
                                         .fill(self.theme.colorAtIndex(index))
                                         .frame(width: (geometry.size.width * Constants.cardWidthRatio),
-                                               height:(geometry.size.height * Constants.cardHeightRatio))
+                                               height: (geometry.size.height * Constants.cardHeightRatio))
                                         .cornerRadius(10, antialiased: true)
                                     Text(value)
                                         .font(.system(size: 120))

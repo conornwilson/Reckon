@@ -28,4 +28,3 @@ extension OceanTheme: PreviewPickerOptionContentProvider {
         return Preview(theme: self)
     }
 }
-

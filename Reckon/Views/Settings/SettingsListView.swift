@@ -36,7 +36,7 @@ struct SettingsListView: View {
                 .listRowInsets(.init(top: Constants.previewRowVerticalInsets, leading: 0, bottom: Constants.previewRowVerticalInsets, trailing: 0))
             SettingsRowView(options: SequenceHelper.sequences.compactMap({ $0 as? PreviewPickerOptionContentProvider }), selected: sequenceBinding, name: "Select Sequence")
                 .listRowInsets(.init(top: Constants.previewRowVerticalInsets, leading: 0, bottom: Constants.previewRowVerticalInsets, trailing: 0))
-            
+
         }
         .colorMultiply(Color(UIColor.secondarySystemBackground))
         .opacity(isVisible ? 1 : 0)

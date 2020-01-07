@@ -18,6 +18,6 @@ struct ThemeHelper {
     ]
 
     public static func themeForName(_ name: String) -> Theme {
-        return themes.first(where: { name == $0.name }) ?? themes.first!
+        return themes.first(where: { name == $0.name }) ?? themes[0]
     }
 }

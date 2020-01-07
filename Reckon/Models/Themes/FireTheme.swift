@@ -16,7 +16,6 @@ struct FireTheme: Theme, ColorTheme {
     func colorAtIndex(_ index: Int) -> Color {
         return color(for: index)
     }
-    
 }
 
 extension FireTheme: PreviewPickerOptionContentProvider {

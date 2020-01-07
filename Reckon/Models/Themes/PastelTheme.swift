@@ -27,14 +27,14 @@ struct PastelTheme: Theme {
         Color(hex: 0x7189bf),
         Color(hex: 0x305f72),
         Color(hex: 0xdefcf9),
-        Color(hex: 0x484c7f),
+        Color(hex: 0x484c7f)
     ]
 
     var name: String = "Pastel"
 
     func colorAtIndex(_ index: Int) -> Color {
         guard colors.indices.contains(index) else {
-            return colors.randomElement()!
+            return colors.randomElement() ?? colors[0]
         }
 
         return colors[index]

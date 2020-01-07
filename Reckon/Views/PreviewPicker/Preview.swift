@@ -34,7 +34,7 @@ enum PreviewType {
                             .fill(Color(UIColor.lightGray))
                             .frame(width: Constants.previewSize, height: Constants.previewSize)
                             .cornerRadius(10, antialiased: true)
-                        Text(sequence.values.joined(separator:", "))
+                        Text(sequence.values.joined(separator: ", "))
                             .font(.headline)
                             .colorInvert()
                             .frame(width: Constants.previewSize * 0.90, height: Constants.previewSize * 0.90)
