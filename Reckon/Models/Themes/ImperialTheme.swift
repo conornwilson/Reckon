@@ -1,5 +1,5 @@
 //
-//  PurpleTheme.swift
+//  ImperialTheme.swift
 //  Reckon
 //
 //  Created by Conor Wilson on 12/23/19.
@@ -9,7 +9,7 @@
 import Foundation
 import SwiftUI
 
-struct PurpleTheme: Theme, ColorTheme {
+struct ImperialTheme: Theme, ColorTheme {
     var name: String = "Imperial"
     var baseColor: Color = Color(hex: 0xa374d5)
 
@@ -18,7 +18,7 @@ struct PurpleTheme: Theme, ColorTheme {
     }
 }
 
-extension PurpleTheme: PreviewPickerOptionContentProvider {
+extension ImperialTheme: PreviewPickerOptionContentProvider {
     var key: String {
         return name
     }

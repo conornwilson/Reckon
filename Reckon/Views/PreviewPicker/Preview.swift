@@ -64,7 +64,7 @@ struct Preview: View {
 
 struct Preview_Previews: PreviewProvider {
     static var previews: some View {
-//        Preview(theme: PurpleTheme())
+//        Preview(theme: ImperialTheme())
         Preview(sequence: StandardSequence())
     }
 }

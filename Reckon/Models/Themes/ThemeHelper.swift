@@ -11,8 +11,10 @@ import Foundation
 struct ThemeHelper {
     public static let themes: [Theme] = [
         PastelTheme(),
-        PurpleTheme(),
-        RedTheme()
+        ImperialTheme(),
+        FireTheme(),
+        FrogTheme(),
+        OceanTheme()
     ]
 
     public static func themeForName(_ name: String) -> Theme {

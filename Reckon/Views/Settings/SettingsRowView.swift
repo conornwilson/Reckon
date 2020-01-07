@@ -24,9 +24,9 @@ struct SettingsRowView_Previews: PreviewProvider {
     static var previews: some View {
         SettingsRowView(
             options: [
-                PurpleTheme(),
+                ImperialTheme(),
                 PastelTheme(),
-                RedTheme()
+                FireTheme()
             ],
             selected: .constant(ThemeHelper.themes[0].name),
             name: "Select Theme")

@@ -12,7 +12,7 @@ struct ContentView: View {
 
     @State private var bottomSheetShown = false
     @State private var theme: Theme = ThemeHelper.themeForName(
-        UserDefaults.standard.string(forKey: "themeName") ?? PurpleTheme().name
+        UserDefaults.standard.string(forKey: "themeName") ?? ImperialTheme().name
     )
     @State private var sequence: Sequence = SequenceHelper.sequenceForName(
         UserDefaults.standard.string(forKey: "sequenceName") ?? StandardSequence().name

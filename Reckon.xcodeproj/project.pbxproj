@@ -10,6 +10,8 @@
 		7023743A23C2531400D91C3E /* PreviewPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7023743923C2531400D91C3E /* PreviewPicker.swift */; };
 		7023743F23C263E400D91C3E /* PreviewPickerOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7023743E23C263E400D91C3E /* PreviewPickerOption.swift */; };
 		7023744123C2D37700D91C3E /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7023744023C2D37700D91C3E /* Preview.swift */; };
+		7023744323C3213700D91C3E /* FrogTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7023744223C3213700D91C3E /* FrogTheme.swift */; };
+		7023744523C3894900D91C3E /* OceanTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7023744423C3894900D91C3E /* OceanTheme.swift */; };
 		70CF052823A73EDB0052A0DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF052723A73EDB0052A0DE /* AppDelegate.swift */; };
 		70CF052A23A73EDB0052A0DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF052923A73EDB0052A0DE /* SceneDelegate.swift */; };
 		70CF052C23A73EDB0052A0DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF052B23A73EDB0052A0DE /* ContentView.swift */; };
@@ -34,8 +36,8 @@
 		70CF056F23B12CA80052A0DE /* PastelTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF056E23B12CA80052A0DE /* PastelTheme.swift */; };
 		70CF057123B136A20052A0DE /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF057023B136A20052A0DE /* Color+Extensions.swift */; };
 		70CF057323B13C8A0052A0DE /* ThemeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF057223B13C8A0052A0DE /* ThemeHelper.swift */; };
-		70CF057523B150880052A0DE /* PurpleTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF057423B150880052A0DE /* PurpleTheme.swift */; };
-		70CF057723B16F140052A0DE /* RedTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF057623B16F140052A0DE /* RedTheme.swift */; };
+		70CF057523B150880052A0DE /* ImperialTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF057423B150880052A0DE /* ImperialTheme.swift */; };
+		70CF057723B16F140052A0DE /* FireTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF057623B16F140052A0DE /* FireTheme.swift */; };
 		70CF057923B16F290052A0DE /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF057823B16F290052A0DE /* ColorTheme.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,8 @@
 		7023743923C2531400D91C3E /* PreviewPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPicker.swift; sourceTree = "<group>"; };
 		7023743E23C263E400D91C3E /* PreviewPickerOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPickerOption.swift; sourceTree = "<group>"; };
 		7023744023C2D37700D91C3E /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
+		7023744223C3213700D91C3E /* FrogTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrogTheme.swift; sourceTree = "<group>"; };
+		7023744423C3894900D91C3E /* OceanTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OceanTheme.swift; sourceTree = "<group>"; };
 		70CF052423A73EDB0052A0DE /* Reckon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reckon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70CF052723A73EDB0052A0DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70CF052923A73EDB0052A0DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,8 +84,8 @@
 		70CF056E23B12CA80052A0DE /* PastelTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastelTheme.swift; sourceTree = "<group>"; };
 		70CF057023B136A20052A0DE /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		70CF057223B13C8A0052A0DE /* ThemeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeHelper.swift; sourceTree = "<group>"; };
-		70CF057423B150880052A0DE /* PurpleTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurpleTheme.swift; sourceTree = "<group>"; };
-		70CF057623B16F140052A0DE /* RedTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedTheme.swift; sourceTree = "<group>"; };
+		70CF057423B150880052A0DE /* ImperialTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImperialTheme.swift; sourceTree = "<group>"; };
+		70CF057623B16F140052A0DE /* FireTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireTheme.swift; sourceTree = "<group>"; };
 		70CF057823B16F290052A0DE /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -225,9 +229,11 @@
 				70CF056E23B12CA80052A0DE /* PastelTheme.swift */,
 				70CF057023B136A20052A0DE /* Color+Extensions.swift */,
 				70CF057223B13C8A0052A0DE /* ThemeHelper.swift */,
-				70CF057423B150880052A0DE /* PurpleTheme.swift */,
-				70CF057623B16F140052A0DE /* RedTheme.swift */,
+				70CF057423B150880052A0DE /* ImperialTheme.swift */,
+				70CF057623B16F140052A0DE /* FireTheme.swift */,
 				70CF057823B16F290052A0DE /* ColorTheme.swift */,
+				7023744223C3213700D91C3E /* FrogTheme.swift */,
+				7023744423C3894900D91C3E /* OceanTheme.swift */,
 			);
 			path = Themes;
 			sourceTree = "<group>";
@@ -249,6 +255,7 @@
 				70CF052023A73EDB0052A0DE /* Sources */,
 				70CF052123A73EDB0052A0DE /* Frameworks */,
 				70CF052223A73EDB0052A0DE /* Resources */,
+				7023744623C471FF00D91C3E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -341,6 +348,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7023744623C471FF00D91C3E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		70CF052023A73EDB0052A0DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -357,14 +384,16 @@
 				70CF055123A741140052A0DE /* SettingsRowView.swift in Sources */,
 				70CF056123A76B520052A0DE /* SequenceHelper.swift in Sources */,
 				70CF057923B16F290052A0DE /* ColorTheme.swift in Sources */,
-				70CF057723B16F140052A0DE /* RedTheme.swift in Sources */,
+				70CF057723B16F140052A0DE /* FireTheme.swift in Sources */,
 				7023744123C2D37700D91C3E /* Preview.swift in Sources */,
 				70CF055D23A764B80052A0DE /* StandardSequence.swift in Sources */,
+				7023744523C3894900D91C3E /* OceanTheme.swift in Sources */,
 				70CF056F23B12CA80052A0DE /* PastelTheme.swift in Sources */,
-				70CF057523B150880052A0DE /* PurpleTheme.swift in Sources */,
+				70CF057523B150880052A0DE /* ImperialTheme.swift in Sources */,
 				70CF056D23B12BDF0052A0DE /* Theme.swift in Sources */,
 				70CF055B23A75F7A0052A0DE /* FibonacciSequence.swift in Sources */,
 				70CF052A23A73EDB0052A0DE /* SceneDelegate.swift in Sources */,
+				7023744323C3213700D91C3E /* FrogTheme.swift in Sources */,
 				70CF052C23A73EDB0052A0DE /* ContentView.swift in Sources */,
 				70CF056323A8A1640052A0DE /* Constants.swift in Sources */,
 				70CF055323A7554A0052A0DE /* CardsListView.swift in Sources */,
@@ -534,7 +563,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.conornwilson.Reckon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -554,7 +583,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.conornwilson.Reckon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

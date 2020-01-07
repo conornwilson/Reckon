@@ -14,4 +14,5 @@ struct Constants {
     static let cardWidthRatio: CGFloat = 0.8
     static let settingsSheetMinHeight: CGFloat = 100
     static let previewSize: CGFloat = 75
+    static let previewRowVerticalInsets: CGFloat = 20
 }

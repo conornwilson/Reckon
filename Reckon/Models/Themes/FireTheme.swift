@@ -1,5 +1,5 @@
 //
-//  RedTheme.swift
+//  FireTheme.swift
 //  Reckon
 //
 //  Created by Conor Wilson on 12/23/19.
@@ -9,7 +9,7 @@
 import Foundation
 import SwiftUI
 
-struct RedTheme: Theme, ColorTheme {
+struct FireTheme: Theme, ColorTheme {
     var name: String = "Fire"
     var baseColor: Color = Color(hex: 0xbb5a5a)
 
@@ -19,7 +19,7 @@ struct RedTheme: Theme, ColorTheme {
     
 }
 
-extension RedTheme: PreviewPickerOptionContentProvider {
+extension FireTheme: PreviewPickerOptionContentProvider {
     var key: String {
         return name
     }

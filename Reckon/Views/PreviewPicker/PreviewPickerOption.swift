@@ -36,7 +36,7 @@ struct PreviewPickerOption: View {
 
 struct PreviewPickerOption_Previews: PreviewProvider {
     static var previews: some View {
-        let theme = PurpleTheme()
+        let theme = ImperialTheme()
         return PreviewPickerOption(selected: .constant(theme.name),
                                    content: PreviewPickerOptionContent(key: theme.name, preview: theme.preview))
     }

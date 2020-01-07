@@ -40,10 +40,10 @@ struct PreviewPicker: View {
 
 struct ThumbPicker_Previews: PreviewProvider {
     static var previews: some View {
-        PreviewPicker(selection: .constant(PurpleTheme().name), title: "Select Theme", providers: [
-            PurpleTheme(),
+        PreviewPicker(selection: .constant(ImperialTheme().name), title: "Select Theme", providers: [
+            ImperialTheme(),
             PastelTheme(),
-            RedTheme()
+            FireTheme()
         ])
     }
 }
