@@ -11,7 +11,9 @@ import SwiftUI
 
 struct OceanTheme: Theme, ColorTheme {
     var name: String = "Ocean"
-    var baseColor: Color = Color(hex: 0xa6e3e9)
+    // swiftlint:disable force_unwrapping
+    var baseColor: UIColor = UIColor(named: "Ocean")!
+    // swiftlint:enable force_unwrapping
 
     func colorAtIndex(_ index: Int) -> Color {
         return color(for: index)

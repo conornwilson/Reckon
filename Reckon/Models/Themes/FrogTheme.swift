@@ -11,7 +11,9 @@ import SwiftUI
 
 struct FrogTheme: Theme, ColorTheme {
     var name: String = "Frog"
-    var baseColor: Color = Color(hex: 0x587850)
+    // swiftlint:disable force_unwrapping
+    var baseColor: UIColor = UIColor(named: "Frog")!
+    // swiftlint:enable force_unwrapping
 
     func colorAtIndex(_ index: Int) -> Color {
         return color(for: index)

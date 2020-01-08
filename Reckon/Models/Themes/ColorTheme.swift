@@ -10,16 +10,15 @@ import Foundation
 import SwiftUI
 
 protocol ColorTheme {
-    var baseColor: Color { get }
+    var baseColor: UIColor { get }
     func color(for distance: Int) -> Color
 }
 
 extension ColorTheme {
     func color(for distance: Int) -> Color {
         guard distance > 0 else {
-            return baseColor
+            return Color(baseColor)
         }
 
-        return baseColor.darker(by: (CGFloat(5 * distance)))
-    }
+        return Color(baseColor.darker(by: (CGFloat(5 * distance))))    }
 }

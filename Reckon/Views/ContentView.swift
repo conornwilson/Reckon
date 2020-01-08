@@ -24,7 +24,7 @@ struct ContentView: View {
                 .padding()
             SettingsSheetView(
                 isOpen: self.$bottomSheetShown,
-                maxHeight: geometry.size.height * 0.65,
+                maxHeight: geometry.size.height * 0.70,
                 sequence: self.$sequence,
                 theme: self.$theme
             )

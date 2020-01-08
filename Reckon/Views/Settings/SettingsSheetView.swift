@@ -53,7 +53,7 @@ struct SettingsSheetView: View {
                 }
             }
             .frame(width: geometry.size.width, height: self.maxHeight, alignment: .top)
-            .background(Color(UIColor.secondarySystemBackground).blur(radius: 3))
+            .background(Color(UIColor.secondarySystemBackground).blur(radius: 1))
             .cornerRadius(10)
             .frame(height: geometry.size.height, alignment: .bottom)
             .offset(y: max(self.offset + self.translation, 0))
@@ -70,7 +70,7 @@ struct SettingsSheetView: View {
                 }
             )
         }
-        .opacity(0.97)
+        .opacity(0.95)
     }
 
     init(isOpen: Binding<Bool>, maxHeight: CGFloat, sequence: Binding<Sequence>, theme: Binding<Theme>) {

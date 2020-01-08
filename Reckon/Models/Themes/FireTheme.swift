@@ -11,7 +11,9 @@ import SwiftUI
 
 struct FireTheme: Theme, ColorTheme {
     var name: String = "Fire"
-    var baseColor: Color = Color(hex: 0xbb5a5a)
+    // swiftlint:disable force_unwrapping
+    var baseColor: UIColor = UIColor(named: "Fire")!
+    // swiftlint:enable force_unwrapping
 
     func colorAtIndex(_ index: Int) -> Color {
         return color(for: index)

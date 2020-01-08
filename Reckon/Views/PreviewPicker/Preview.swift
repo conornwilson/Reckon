@@ -31,7 +31,9 @@ enum PreviewType {
                 VStack {
                     ZStack {
                         Rectangle()
-                            .fill(Color(UIColor.lightGray))
+                            // swiftlint:disable force_unwrapping
+                            .fill(Color(UIColor(named: "Sequence")!))
+                            // swiftlint:enable force_unwrapping
                             .frame(width: Constants.previewSize, height: Constants.previewSize)
                             .cornerRadius(10, antialiased: true)
                         Text(sequence.values.joined(separator: ", "))

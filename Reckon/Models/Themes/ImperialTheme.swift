@@ -11,7 +11,9 @@ import SwiftUI
 
 struct ImperialTheme: Theme, ColorTheme {
     var name: String = "Imperial"
-    var baseColor: Color = Color(hex: 0xa374d5)
+    // swiftlint:disable force_unwrapping
+    var baseColor: UIColor = UIColor(named: "Imperial")!
+    // swiftlint:enable force_unwrapping
 
     func colorAtIndex(_ index: Int) -> Color {
         return color(for: index)

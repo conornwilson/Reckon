@@ -31,6 +31,7 @@ struct SettingsListView: View {
             self.selectedSequence = SequenceHelper.sequenceForName($0)
         })
 
+        //VStack(spacing: 20)
         return Form {
             SettingsRowView(options: ThemeHelper.themes.compactMap({ $0 as? PreviewPickerOptionContentProvider }), selected: themeBinding, name: "Select Theme")
                 .listRowInsets(.init(top: Constants.previewRowVerticalInsets, leading: 0, bottom: Constants.previewRowVerticalInsets, trailing: 0))
@@ -38,7 +39,6 @@ struct SettingsListView: View {
                 .listRowInsets(.init(top: Constants.previewRowVerticalInsets, leading: 0, bottom: Constants.previewRowVerticalInsets, trailing: 0))
 
         }
-        .colorMultiply(Color(UIColor.secondarySystemBackground))
         .opacity(isVisible ? 1 : 0)
         .onAppear {
             self.selectedThemeName = self.selectedTheme.name
@@ -50,6 +50,7 @@ struct SettingsListView: View {
         self._selectedSequence = selectedSequence
         self._selectedTheme = selectedTheme
         self.isVisible = isVisible
+        UITableView.appearance().backgroundColor = .clear
     }
 }
 
