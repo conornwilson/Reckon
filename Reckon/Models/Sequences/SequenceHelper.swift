@@ -10,6 +10,8 @@ import Foundation
 
 struct SequenceHelper {
 
+    public static let sequenceKey = "sequence_name"
+
     public static let sequences: [Sequence] = [
         StandardSequence(),
         FibonacciSequence(),

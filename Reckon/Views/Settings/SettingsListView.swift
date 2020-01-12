@@ -31,7 +31,6 @@ struct SettingsListView: View {
             self.selectedSequence = SequenceHelper.sequenceForName($0)
         })
 
-        //VStack(spacing: 20)
         return Form {
             SettingsRowView(options: ThemeHelper.themes.compactMap({ $0 as? PreviewPickerOptionContentProvider }), selected: themeBinding, name: "Select Theme")
                 .listRowInsets(.init(top: Constants.previewRowVerticalInsets, leading: 0, bottom: Constants.previewRowVerticalInsets, trailing: 0))

@@ -204,7 +204,6 @@
 		70CF055623A75C640052A0DE /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				70CF056623A8B3D70052A0DE /* Settings */,
 				70CF056523A8B36C0052A0DE /* Themes */,
 				70CF056423A8B3480052A0DE /* Sequences */,
 				70CF056223A8A1640052A0DE /* Constants.swift */,
@@ -239,13 +238,6 @@
 				7023744723C598CF00D91C3E /* UIColor+Extensions.swift */,
 			);
 			path = Themes;
-			sourceTree = "<group>";
-		};
-		70CF056623A8B3D70052A0DE /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -560,6 +552,7 @@
 				DEVELOPMENT_TEAM = 4VE85D2NSY;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Reckon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -580,6 +573,7 @@
 				DEVELOPMENT_TEAM = 4VE85D2NSY;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Reckon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

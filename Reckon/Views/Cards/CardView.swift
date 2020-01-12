@@ -50,11 +50,11 @@ struct CardView: View {
             }
             .navigationBarItems(trailing:
                 Button(action: {
-                  self.presentationMode.wrappedValue.dismiss()
+                    self.presentationMode.wrappedValue.dismiss()
                 }) {
                     Image(systemName: "xmark")
-                    .renderingMode(.original)
-                    .font(Font.title.weight(.semibold))
+                        .font(Font.title.weight(.semibold))
+                        .foregroundColor(.primary)
             })
         }
     }

@@ -9,6 +9,8 @@
 import Foundation
 
 struct ThemeHelper {
+    public static let themeKey = "theme_name"
+
     public static let themes: [Theme] = [
         PastelTheme(),
         ImperialTheme(),
