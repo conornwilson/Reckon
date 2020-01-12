@@ -22,6 +22,7 @@ struct SettingsListView: View {
         set: {
             self.selectedThemeName = $0
             self.selectedTheme = ThemeHelper.themeForName($0)
+            UserDefaults.standard.set($0, forKey: ThemeHelper.themeKey)
         })
 
         let sequenceBinding = Binding<String>(
@@ -29,6 +30,7 @@ struct SettingsListView: View {
         set: {
             self.selectedSequenceName = $0
             self.selectedSequence = SequenceHelper.sequenceForName($0)
+            UserDefaults.standard.set($0, forKey: SequenceHelper.sequenceKey)
         })
 
         return Form {

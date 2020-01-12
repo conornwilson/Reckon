@@ -13,19 +13,11 @@ struct ContentView: View {
     @State private var bottomSheetShown = false
     @State private var theme: Theme = ThemeHelper.themeForName(
         UserDefaults.standard.string(forKey: ThemeHelper.themeKey) ?? ImperialTheme().name
-    ) {
-        didSet {
-            UserDefaults.standard.set(theme.name, forKey: ThemeHelper.themeKey)
-        }
-    }
+    )
 
     @State private var sequence: Sequence = SequenceHelper.sequenceForName(
         UserDefaults.standard.string(forKey: SequenceHelper.sequenceKey) ?? StandardSequence().name
-    ) {
-        didSet {
-            UserDefaults.standard.set(sequence.name, forKey: SequenceHelper.sequenceKey)
-        }
-    }
+    )
 
     var body: some View {
         GeometryReader { geometry in
