@@ -13,6 +13,7 @@
 		7023744323C3213700D91C3E /* FrogTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7023744223C3213700D91C3E /* FrogTheme.swift */; };
 		7023744523C3894900D91C3E /* OceanTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7023744423C3894900D91C3E /* OceanTheme.swift */; };
 		7023744823C598CF00D91C3E /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7023744723C598CF00D91C3E /* UIColor+Extensions.swift */; };
+		7070A7D523CD8DDF00F5FE26 /* BortTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7070A7D423CD8DDF00F5FE26 /* BortTheme.swift */; };
 		70CF052823A73EDB0052A0DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF052723A73EDB0052A0DE /* AppDelegate.swift */; };
 		70CF052A23A73EDB0052A0DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF052923A73EDB0052A0DE /* SceneDelegate.swift */; };
 		70CF052C23A73EDB0052A0DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF052B23A73EDB0052A0DE /* ContentView.swift */; };
@@ -59,6 +60,7 @@
 		7023744223C3213700D91C3E /* FrogTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrogTheme.swift; sourceTree = "<group>"; };
 		7023744423C3894900D91C3E /* OceanTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OceanTheme.swift; sourceTree = "<group>"; };
 		7023744723C598CF00D91C3E /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		7070A7D423CD8DDF00F5FE26 /* BortTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BortTheme.swift; sourceTree = "<group>"; };
 		70CF052423A73EDB0052A0DE /* Reckon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reckon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70CF052723A73EDB0052A0DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70CF052923A73EDB0052A0DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 				7023744223C3213700D91C3E /* FrogTheme.swift */,
 				7023744423C3894900D91C3E /* OceanTheme.swift */,
 				7023744723C598CF00D91C3E /* UIColor+Extensions.swift */,
+				7070A7D423CD8DDF00F5FE26 /* BortTheme.swift */,
 			);
 			path = Themes;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				7023744123C2D37700D91C3E /* Preview.swift in Sources */,
 				70CF055D23A764B80052A0DE /* StandardSequence.swift in Sources */,
 				7023744523C3894900D91C3E /* OceanTheme.swift in Sources */,
+				7070A7D523CD8DDF00F5FE26 /* BortTheme.swift in Sources */,
 				70CF056F23B12CA80052A0DE /* PastelTheme.swift in Sources */,
 				70CF057523B150880052A0DE /* ImperialTheme.swift in Sources */,
 				70CF056D23B12BDF0052A0DE /* Theme.swift in Sources */,

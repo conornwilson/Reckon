@@ -16,7 +16,8 @@ struct ThemeHelper {
         ImperialTheme(),
         FireTheme(),
         FrogTheme(),
-        OceanTheme()
+        OceanTheme(),
+        BortTheme()
     ]
 
     public static func themeForName(_ name: String) -> Theme {
