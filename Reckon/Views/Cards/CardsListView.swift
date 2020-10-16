@@ -12,7 +12,7 @@ struct CardsListView: View {
     @Binding var theme: Theme
     @Binding var sequence: Sequence
     @State private var showModal: Bool = false
-    @State private var currentIndex: Int = 0
+    @State private var selectedIndex: Int = 0
 
     private func indexForValue(_ value: String?) -> Int {
         guard let value = value, let index = sequence.values.firstIndex(of: value) else {
@@ -30,7 +30,7 @@ struct CardsListView: View {
                                      currentIndex: self.indexForValue(valuePair.first),
                                      onTapAction: { index in
                         self.showModal = true
-                        self.currentIndex = index
+                        self.selectedIndex = index
                     })
                         .frame(height: Constants.cardCellHeight)
                     if valuePair.count > 1 {
@@ -39,7 +39,7 @@ struct CardsListView: View {
                                          currentIndex: self.indexForValue(valuePair.last),
                                          onTapAction: { index in
                             self.showModal = true
-                            self.currentIndex = index
+                            self.selectedIndex = index
                         })
                             .frame(height: Constants.cardCellHeight)
                     } else {
@@ -52,7 +52,7 @@ struct CardsListView: View {
                 .frame(height: Constants.cardCellHeight)
         }
         .sheet(isPresented: self.$showModal) {
-            CardView(theme: self.$theme, sequence: self.$sequence, currentIndex: self.$currentIndex)
+            CardView(theme: self.$theme, sequence: self.$sequence, currentIndex: self.$selectedIndex)
         }
     }
 }

@@ -26,7 +26,7 @@ struct CardListCellView: View {
                         self.onTapAction?(self.currentIndex)
                     }
                 )
-                Text(self.sequence.values[self.currentIndex])
+                Text(self.sequence.titleAtIndex(self.currentIndex))
                     .font(.largeTitle)
                     .bold()
                     .foregroundColor(Color.white)

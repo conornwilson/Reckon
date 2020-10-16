@@ -12,3 +12,9 @@ protocol Sequence {
     var name: String { get }
     var values: [String] { get }
 }
+
+extension Sequence {
+    func titleAtIndex(_ index: Int) -> String {
+        return values.indices.contains(index) ? values[index] : ""
+    }
+}

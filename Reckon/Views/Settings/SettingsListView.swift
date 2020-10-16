@@ -33,7 +33,7 @@ struct SettingsListView: View {
             UserDefaults.standard.set($0, forKey: SequenceHelper.sequenceKey)
         })
 
-        return Form {
+        return VStack {
             SettingsRowView(options: ThemeHelper.themes.compactMap({ $0 as? PreviewPickerOptionContentProvider }), selected: themeBinding, name: "Select Theme")
                 .listRowInsets(.init(top: Constants.previewRowVerticalInsets, leading: 0, bottom: Constants.previewRowVerticalInsets, trailing: 0))
             SettingsRowView(options: SequenceHelper.sequences.compactMap({ $0 as? PreviewPickerOptionContentProvider }), selected: sequenceBinding, name: "Select Sequence")

@@ -30,7 +30,8 @@ struct CardView: View {
                        currentPage: $currentIndex,
                        control: self.pageControl) { index, value in
                         GeometryReader { geometry in
-                            VStack {
+                            HStack(alignment: .center) {
+                                Spacer()
                                 ZStack {
                                     Rectangle()
                                         .fill(self.theme.colorAtIndex(index))
@@ -44,7 +45,6 @@ struct CardView: View {
                                         .shadow(radius: 1)
                                 }
                                 Spacer()
-                                    .frame(height: Constants.cardCellHeight)
                             }
                         }
             }
